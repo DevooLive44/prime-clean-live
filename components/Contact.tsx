@@ -65,6 +65,7 @@ const Contact: React.FC = () => {
   action="https://formspree.io/f/mwvrqayk"
   method="POST"
   onSubmit={handleSubmit}
+   noValidate                
   className="space-y-6"
 >
   <div>
