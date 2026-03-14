@@ -12,7 +12,10 @@ const AIAssistant: React.FC = () => {
     setLoading(true);
     
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      
+const ai = new GoogleGenAI({
+  apiKey: "AIzaSyDpljyxLNLwTUd0Yf8T2DHg7nmv0wC1LWE"
+});
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
         contents: `Analysiere folgende Reinigungsanfrage für PrimeClean Facility Management Berlin. Wir spezialisieren uns auf Treppenhausreinigung und Objektbetreuung. Schätze die ungefähre Dauer/Frequenz und gib einen kurzen, professionellen Ratschlag für Hausverwaltungen oder Eigentümer. Der Benutzer sagt: "${userInput}". 
