@@ -42,9 +42,11 @@ const AboutOwner: React.FC = () => {
             <div className="relative w-full max-w-md rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] border border-white/10 bg-slate-900/50 backdrop-blur-sm aspect-[3/4] group">
               {imageSrc ? (
                 <img 
-                  src={imageSrc || "/Bewerbungsfoto.PNG"}
-                  alt="Devran Dennis Joó" 
-                  className="w-full h-full object-cover"
+                  <img
+  src="/images/meinfoto.jpg"
+  alt="Devran Dennis Joó"
+  className="w-full h-full object-cover"
+/>
                 />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 text-slate-500 p-12 text-center">
@@ -61,10 +63,7 @@ const AboutOwner: React.FC = () => {
               </div>
             </div>
             <div className="mt-8">
-              <input type="file" ref={fileInputRef} onChange={handleImageUpload} className="hidden" accept="image/*" />
-              <button onClick={triggerUpload} className="px-6 py-3 bg-white/5 hover:bg-blue-600 text-white rounded-xl font-bold transition-all border border-white/10 text-xs uppercase tracking-widest">
-                {imageSrc ? 'Foto ändern' : 'Foto einfügen'}
-              </button>
+      
             </div>
           </div>
 
