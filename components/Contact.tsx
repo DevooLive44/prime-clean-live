@@ -49,24 +49,27 @@ const Contact: React.FC = () => {
                 <p className="text-slate-600">Vielen Dank für den Austausch. Wir melden uns zeitnah.</p>
                 <button onClick={() => setSubmitted(false)} className="mt-8 text-blue-600 font-bold hover:underline">Neue Anfrage</button>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Verwaltung / Name</label>
-                  <input required type="text" className="w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all font-medium" placeholder="Objekteigentümer oder Verwaltung" />
-                </div>
-                <div>
-                  <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">E-Mail</label>
-                  <input required type="email" className="w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all font-medium" placeholder="Ihre Adresse" />
-                </div>
-                <div>
-                  <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Nachricht / Objekt-Detail</label>
-                  <textarea required className="w-full h-44 px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all resize-none font-medium" placeholder="Ihr Anliegen im Raum Berlin..."></textarea>
-                </div>
-                <button type="submit" className="w-full py-6 bg-[#1e3a8a] hover:bg-blue-800 text-white font-black rounded-2xl transition-all shadow-xl uppercase tracking-widest text-sm">
-                  Unverbindlich anfragen
-                </button>
-              </form>
+            ) : (<form
+  action="https://formspree.io/f/mwvrqayk
+  method="POST"
+  className="space-y-6"
+>
+  <div>
+    <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Verwaltung / Name</label>
+    <input required type="text" name="name" className="w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all font-medium" placeholder="Objekteigentümer oder Verwaltung" />
+  </div>
+  <div>
+    <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">E-Mail</label>
+    <input required type="email" name="email" className="w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all font-medium" placeholder="Ihre Adresse" />
+  </div>
+  <div>
+    <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Nachricht / Objekt-Detail</label>
+    <textarea required name="message" className="w-full h-44 px-6 py-5 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition-all resize-none font-medium" placeholder="Ihr Anliegen im Raum Berlin..."></textarea>
+  </div>
+  <button type="submit" className="w-full py-6 bg-[#1e3a8a] hover:bg-blue-800 text-white font-black rounded-2xl transition-all shadow-xl uppercase tracking-widest text-sm">
+    Unverbindlich anfragen
+  </button>
+</form>
             )}
           </div>
         </div>
