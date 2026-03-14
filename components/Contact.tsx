@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                 <button onClick={() => setSubmitted(false)} className="mt-8 text-blue-600 font-bold hover:underline">Neue Anfrage</button>
               </div>
             ) : (<form
-  action="https://formspree.io/f/mwvrqayk
+  action="https://formspree.io/f/mwvrqayk"
   method="POST"
   className="space-y-6"
 >
