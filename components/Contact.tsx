@@ -4,10 +4,22 @@ import React, { useState } from 'react';
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const data = new FormData(form);
+
+  await fetch("https://formspree.io/f/mwvrqayk", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  setSubmitted(true);
+};
 
   return (
     <section id="contact" className="py-24 bg-white">
@@ -52,6 +64,7 @@ const Contact: React.FC = () => {
             ) : (<form
   action="https://formspree.io/f/mwvrqayk"
   method="POST"
+  onSubmit={handleSubmit}
   className="space-y-6"
 >
   <div>
