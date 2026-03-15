@@ -1,8 +1,0 @@
-/public
-   /images
-       meinfoto.jpg
-/src
-   /components
-   App.tsx
-   ...
-index.html
