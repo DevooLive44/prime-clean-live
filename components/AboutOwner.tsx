@@ -42,7 +42,7 @@ const AboutOwner: React.FC = () => {
               {imageSrc ? (
                 <img 
                   <img
-  src="/images/meinfoto.jpg"
+  src="/images/dennis.jpg"
   alt="Devran Dennis Joó"
   className="w-full h-full object-cover"
 />
