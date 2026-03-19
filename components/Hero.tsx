@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-black text-[#0f172a] leading-[1.05] mb-8 tracking-tighter">
               PrimeClean <br/>
               <span className="text-blue-600">Facility Management</span> <br/>
-              – Berlin
+              
             </h1>
             <div className="space-y-4 mb-10">
               <p className="text-xl text-slate-700 font-semibold leading-relaxed max-w-xl">
