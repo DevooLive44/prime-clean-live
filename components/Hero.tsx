@@ -15,8 +15,10 @@ const Hero: React.FC = () => {
               Region Berlin • Start am 05.04.2026
             </div>
             <h1 className="text-5xl md:text-7xl font-black text-[#0f172a] leading-[1.05] mb-8 tracking-tighter">
-              PrimeClean <br/>
-              <span className="text-blue-600">Facility Management</span> <br/>
+              <h1 className="text-5xl md:text-7xl font-black text-[#0f172a] leading-[1.05] mb-8 tracking-tighter">
+  PrimeClean <br/>
+  <span className="text-blue-600">Facility Management</span>
+</h1>
               
             </h1>
             <div className="space-y-4 mb-10">
