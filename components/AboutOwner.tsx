@@ -45,7 +45,6 @@ const AboutOwner: React.FC = () => {
   alt="Devran Dennis Joo"
   className="w-full h-full object-cover"
 />
-                />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 text-slate-500 p-12 text-center">
                   <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mb-6">
