@@ -40,10 +40,10 @@ const AboutOwner: React.FC = () => {
           <div className="relative order-2 lg:order-1 flex flex-col items-center">
             <div className="relative w-full max-w-md rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] border border-white/10 bg-slate-900/50 backdrop-blur-sm aspect-[3/4] group">
               {imageSrc ? (
-                <img
+               <img
   src="/dennis.jpg"
   alt="Devran Dennis Joo"
-  className="w-full h-full object-cover"
+  className="w-full max-w-md h-[500px] object-cover rounded-2xl shadow-2xl"
 />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 text-slate-500 p-12 text-center">
