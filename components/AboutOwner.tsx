@@ -43,7 +43,7 @@ const AboutOwner: React.FC = () => {
                <img
   src="/dennis.jpg"
   alt="Devran Dennis Joo"
-  className="w-full max-w-md h-[500px] object-cover rounded-2xl shadow-2xl"
+  className="w-full max-w-md h-[500px] object-cover object-top rounded-2xl shadow-2xl"
 />
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 text-slate-500 p-12 text-center">
