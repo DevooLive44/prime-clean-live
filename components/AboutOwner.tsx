@@ -41,10 +41,10 @@ const AboutOwner: React.FC = () => {
             <div className="relative w-full max-w-md rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] border border-white/10 bg-slate-900/50 backdrop-blur-sm aspect-[3/4] group">
              {true ? (
   <img
-    src="/dennis.jpg"
-    alt="Devran Dennis Joo"
-    className="w-full h-full object-cover object-top"
-  />
+  src="/dennis.jpg"
+  alt="Devran Dennis Joo"
+  className="absolute inset-0 w-full h-full object-cover object-[center_10%]"
+/>
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 text-slate-500 p-12 text-center">
                   <div className="w-32 h-32 bg-slate-700/50 rounded-full flex items-center justify-center mb-6">
