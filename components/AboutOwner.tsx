@@ -39,7 +39,7 @@ const AboutOwner: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1 flex flex-col items-center">
             <div className="relative w-full max-w-md rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.6)] border border-white/10 bg-slate-900/50 backdrop-blur-sm aspect-[3/4] group">
-              {imageSrc ? (
+             {true ? (
                <img
   src="/dennis.jpg"
   alt="Devran Dennis Joo"
