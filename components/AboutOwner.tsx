@@ -13,7 +13,7 @@ const AboutOwner: React.FC = () => {
               <img
                 src="/dennis.jpg"
                 alt="Devran Dennis Joo"
-                className="absolute inset-0 w-full h-full object-cover object-[center_15%]"
+                className="absolute inset-0 w-full h-full object-contain bg-black
               />
 
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black p-8">
