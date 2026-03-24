@@ -43,8 +43,7 @@ const AboutOwner: React.FC = () => {
   src="/dennis.jpg"
   alt="Devran Dennis Joo"
   className="absolute inset-0 w-full h-full object-cover object-[center_10%]"
-/>
-               
+/>           
                 <p className="text-blue-400 font-bold tracking-[0.2em] uppercase text-[10px]">Integrität & Professionalität</p>
               </div>
             </div>
