@@ -8,19 +8,23 @@ const AboutOwner: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           <div className="flex justify-center">
-            <div className="relative w-full max-w-md h-[560px] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10">
+           <div className="relative w-full max-w-md aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.7)] border border-white/10 group">
 
-              <img
-                src="/dennis.jpg"
-                alt="Devran Dennis Joo"
-                className="absolute inset-0 w-full h-full object-contain bg-black"
-              />
+  <img
+    src="/dennis.jpg"
+    alt="Devran Dennis Joó"
+    className="absolute inset-0 w-full h-full object-cover object-[center_12%] scale-[1.08] group-hover:scale-[1.12] transition duration-700"
+  />
 
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black p-8">
-                <p className="text-blue-400 text-xs font-bold tracking-widest uppercase">
-                  Integrität & Professionalität
-                </p>
-              </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
+
+  <div className="absolute bottom-0 left-0 right-0 p-8">
+    <p className="text-blue-400 text-xs font-bold tracking-[0.25em] uppercase">
+      Integrität & Professionalität
+    </p>
+  </div>
+
+</div>
 
             </div>
           </div>
