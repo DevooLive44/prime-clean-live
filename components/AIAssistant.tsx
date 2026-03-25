@@ -15,17 +15,15 @@ const generateEstimate = async () => {
   setLoading(true);
 
   try {
-
-    const res = await fetch("/api/api/ai"
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        input: userInput
-      })
-    });
-
+const res = await fetch("/api/api/ai", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    input: userInput
+  })
+});
     const data = await res.json();
 
     setResult(data);
