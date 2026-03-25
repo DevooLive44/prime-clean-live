@@ -35,29 +35,44 @@ export default function AIAssistant() {
   };
 
   return (
-    <div className="bg-slate-900 p-8 rounded-2xl">
-      <textarea
-        value={userInput}
-        onChange={(e) => setUserInput(e.target.value)}
-        className="w-full p-4 rounded-xl text-black"
-        placeholder="Beschreibe deine Reinigungsanfrage..."
-      />
+    return (
+  <section className="py-24 bg-[#0f172a] text-white border-t border-slate-800/50">
+    <div className="max-w-4xl mx-auto px-6">
 
-      <button
-        onClick={generateEstimate}
-        className="mt-4 bg-blue-600 px-6 py-3 rounded-xl"
-      >
-        Planungsschätzung
-      </button>
+      <div className="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-10 shadow-[0_30px_60px_rgba(0,0,0,0.6)]">
 
-      {loading && <p className="mt-4">KI denkt...</p>}
+        <h2 className="text-4xl font-black mb-6 tracking-tighter">
+          KI Planungsschätzung
+        </h2>
 
-      {result && (
-        <div className="mt-6 bg-slate-800 p-4 rounded-xl">
-          {result}
-        </div>
-      )}
+        <textarea
+          value={userInput}
+          onChange={(e) => setUserInput(e.target.value)}
+          placeholder="Beschreibe dein Objekt z.B. Büro 500qm Glasflächen tägliche Reinigung..."
+          className="w-full h-40 bg-slate-800 border border-white/10 rounded-2xl p-6 outline-none focus:border-blue-500 transition"
+        />
+
+        <button
+          onClick={generateEstimate}
+          className="mt-6 bg-blue-600 hover:bg-blue-700 transition px-8 py-4 rounded-2xl font-bold"
+        >
+          Planungsschätzung
+        </button>
+
+        {loading && (
+          <p className="mt-6 text-blue-400 font-bold">
+            KI analysiert Anfrage...
+          </p>
+        )}
+
+        {result && (
+          <div className="mt-8 bg-slate-800/60 border border-white/10 p-6 rounded-2xl">
+            {result}
+          </div>
+        )}
+
+      </div>
 
     </div>
-  );
-}
+  </section>
+);
