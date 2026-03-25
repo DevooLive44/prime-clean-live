@@ -8,33 +8,35 @@ const AIAssistant: React.FC = () => {
   const [result, setResult] = useState<{ estimation: string; advice: string } | null>(null);
 
   const generateEstimate = async () => {
-    if (!userInput.trim()) return;
-    setLoading(true);
-    
-    try {
-      
-const ai = new GoogleGenAI({
-  apiKey: "AIzaSyDpljyxLNLwTUd0Yf8T2DHg7nmv0wC1LWE"
-});
-      const response = await ai.models.generateContent({
-        model: "gemini-3-flash-preview",
-        contents: `Analysiere folgende Reinigungsanfrage für PrimeClean Facility Management Berlin. Wir spezialisieren uns auf Treppenhausreinigung und Objektbetreuung. Schätze die ungefähre Dauer/Frequenz und gib einen kurzen, professionellen Ratschlag für Hausverwaltungen oder Eigentümer. Der Benutzer sagt: "${userInput}". 
-        Antworte ausschließlich im JSON-Format mit den Feldern 'estimation' (z.B. "1x wöchentlich, ca. 2 Std.") und 'advice' (kurzer Experten-Tipp). Sprache: Deutsch.`,
-        config: {
-          responseMimeType: "application/json",
-          responseSchema: {
-            type: Type.OBJECT,
-            properties: {
-              estimation: { type: Type.STRING },
-              advice: { type: Type.STRING }
-            },
-            required: ["estimation", "advice"]
-          }
-        }
-      });
 
-      const data = JSON.parse(response.text);
-      setResult(data);
+  if (!userInput.trim()) return;
+
+  setLoading(true);
+
+  try {
+
+    const res = await fetch("/api/ai", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        input: userInput
+      })
+    });
+
+    const data = await res.json();
+
+    setResult(data);
+
+  } catch (err) {
+    console.log(err);
+  }
+
+  setLoading(false);
+};
+      
+
     } catch (error) {
       console.error("AI Error:", error);
     } finally {
