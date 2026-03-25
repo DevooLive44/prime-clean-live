@@ -1,13 +1,14 @@
 
 import React, { useState } from 'react';
-import { GoogleGenAI, Type } from "@google/genai";
+
 
 const AIAssistant: React.FC = () => {
   const [userInput, setUserInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<{ estimation: string; advice: string } | null>(null);
 
-  const generateEstimate = async () => {
+  
+const generateEstimate = async () => {
 
   if (!userInput.trim()) return;
 
@@ -35,15 +36,6 @@ const AIAssistant: React.FC = () => {
 
   setLoading(false);
 };
-      
-
-    } catch (error) {
-      console.error("AI Error:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <section id="ai-assistant" className="py-24 bg-[#0f172a] text-white overflow-hidden relative">
       <div className="max-w-4xl mx-auto px-4 relative z-10">
