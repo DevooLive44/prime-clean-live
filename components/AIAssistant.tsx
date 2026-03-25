@@ -16,7 +16,7 @@ const generateEstimate = async () => {
 
   try {
 
-    const res = await fetch("/api/ai", {
+    const res = await fetch("/api/api/ai"
       method: "POST",
       headers: {
         "Content-Type": "application/json"
