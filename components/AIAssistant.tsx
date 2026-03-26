@@ -34,6 +34,7 @@ export default function AIAssistant() {
 
   };
     return (
+      
   <section className="py-24 bg-[#0f172a] text-white border-t border-slate-800/50">
     <div className="max-w-4xl mx-auto px-6">
 
