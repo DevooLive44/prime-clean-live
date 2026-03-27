@@ -49,8 +49,7 @@ const AIAssistant = () => {
 
       
         
-        contents: `Erstelle eine kurze Planungsschätzung für folgende Reinigungsanfrage: ${userInput}`
-      });
+        
 
       setResult(response.text);
 
