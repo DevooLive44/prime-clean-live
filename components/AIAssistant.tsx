@@ -48,7 +48,7 @@ const AIAssistant = () => {
       
 
       
-        model: "gemini-1.5-flash",
+        
         contents: `Erstelle eine kurze Planungsschätzung für folgende Reinigungsanfrage: ${userInput}`
       });
 
