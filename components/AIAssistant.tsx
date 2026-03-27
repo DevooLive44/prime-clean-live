@@ -96,8 +96,4 @@ const AIAssistant = () => {
 
       </div>
     </section>
-  );
-
-};
-
-export default AIAssistant;
+ 
