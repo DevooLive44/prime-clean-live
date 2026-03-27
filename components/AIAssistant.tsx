@@ -47,7 +47,7 @@ const AIAssistant = () => {
 
       
 
-      const response = await ai.models.generateContent({
+      
         model: "gemini-1.5-flash",
         contents: `Erstelle eine kurze Planungsschätzung für folgende Reinigungsanfrage: ${userInput}`
       });
