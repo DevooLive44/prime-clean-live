@@ -8,28 +8,7 @@ const AIAssistant = () => {
 
  const generateEstimate = async () => {
 
-  if (!userInput.trim()) return;
-
-  setLoading(true);
-
-  try {
-
-    const res = await fetch("/api/ai", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        prompt: `Erstelle eine kurze Planungsschätzung für folgende Reinigungsanfrage: ${userInput}`
-      })
-    });
-
-    const data = await res.json();
-
-    setResult(data.text);
-
-  } catch (e) {
-
+  
     setResult("Fehler bei KI Anfrage");
 
   }
