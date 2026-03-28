@@ -18,7 +18,7 @@ export default async function handler(req, res) {
 
     const result = await model.generateContent(prompt);
 
-    const text = result.response.text();
+    const text = result.response.candidates?.[0]?.content?.parts?.[0]?.text || "Keine Antwort von KI";
 
     return res.status(200).json({ text });
 
