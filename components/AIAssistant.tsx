@@ -29,9 +29,7 @@ export default function AIAssistant() {
         setResult("Keine Antwort von KI");
       }
 
-    } catch (e) {
-      setResult("Fehler bei KI Anfrage");
-    }
+    
 
     setLoading(false);
   };
