@@ -3,7 +3,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import AIAssistant from './components/AIAssistant';
 import Contact from './components/Contact';
 import Logo from './components/Logo';
 import AboutOwner from './components/AboutOwner';
@@ -61,9 +60,6 @@ const App: React.FC = () => {
 
         {/* 4️⃣ & 5️⃣ Geplante Dienstleistungen & Grundsätze */}
         <Services />
-        
-        {/* KI Analyse Tool */}
-        <AIAssistant />
 
         {/* 6️⃣ Kontakt */}
         <Contact />
