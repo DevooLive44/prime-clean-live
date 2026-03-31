@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 
-export default function AIAssistant() {
   const [userInput, setUserInput] = useState("");
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
