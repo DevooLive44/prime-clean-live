@@ -68,7 +68,7 @@ const App: React.FC = () => {
         <section className="py-10 bg-blue-50 border-y border-blue-100">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-blue-800 text-xs font-bold leading-loose uppercase tracking-widest">
-              Gewerbe gegründet. Operativer Start am 05.04.2026. Wir freuen uns auf Ihre Anfragen.
+              Wir freuen uns auf Ihre Anfragen.
             </p>
           </div>
         </section>
@@ -82,9 +82,9 @@ const App: React.FC = () => {
               "PrimeClean Facility Management – Professionelle Objekt- und Reinigungsdienstleistungen für Berlin."
             </p>
             <div className="bg-blue-900/20 border border-blue-500/20 p-8 rounded-3xl backdrop-blur-sm">
-              <p className="text-xs font-black text-blue-300 mb-3 tracking-[0.2em] uppercase">Status: Gegründet (Start 05.04.2026)</p>
+              <p className="text-xs font-black text-blue-300 mb-3 tracking-[0.2em] uppercase">Status: Gegründet </p>
               <p className="text-[11px] text-blue-200/60 leading-relaxed font-medium">
-                PrimeClean Facility Management ist offiziell gegründet. Wir bereiten uns auf den operativen Start in Berlin vor.
+                PrimeClean Facility Management ist offiziell gegründet. WWir sind in Berlin aktiv und stehen Ihnen mit professionellen Reinigungs- und Facility-Services zur Verfügung.
               </p>
             </div>
           </div>
@@ -114,7 +114,7 @@ const App: React.FC = () => {
           <span>© {new Date().getFullYear()} PrimeClean Berlin Edition</span>
           <div className="flex gap-10">
             <span>Gegründet</span>
-            <span>Start 05.04.2026</span>
+            <span>VERFÜGBAR</span>
           </div>
         </div>
       </footer>
