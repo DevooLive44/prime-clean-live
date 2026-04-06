@@ -21,7 +21,7 @@ const Services: React.FC = () => {
           </div>
           <h2 className="text-4xl font-black text-slate-900 mb-6 tracking-tight uppercase">Unsere Dienstleistungen</h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-            Ab dem 05.04.2026 bieten wir in Berlin folgende professionelle Leistungen an:
+            Wir bieten in Berlin ein umfassendes Angebot an professionellen Reinigungs- und Facility-Services.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
