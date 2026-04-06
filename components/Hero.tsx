@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex flex-col sm:row gap-4">
               <a href="#contact" className="px-10 py-5 bg-[#1e3a8a] hover:bg-blue-800 text-white rounded-2xl font-bold text-center transition-all shadow-2xl hover:-translate-y-1 active:scale-95">
-                Unverbindliche Kontaktaufnahme für Berlin
+                Jetzt kostenloses Angebot anfordern
               </a>
             </div>
           </div>
