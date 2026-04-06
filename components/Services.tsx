@@ -17,7 +17,7 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            Verfügbar ab 05.04.2026
+            AB SOFORT VERFÜGBAR
           </div>
           <h2 className="text-4xl font-black text-slate-900 mb-6 tracking-tight uppercase">Unsere Dienstleistungen</h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
