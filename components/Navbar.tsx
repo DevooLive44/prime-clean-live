@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
           <Logo className="h-10" />
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-slate-600 hover:text-blue-700 font-medium transition-colors">Leistungen</a>
-            <a href="#ai-assistant" className="text-slate-600 hover:text-blue-700 font-medium transition-colors">Angebot-KI</a>
+           
             <a href="#contact" className="text-slate-600 hover:text-blue-700 font-medium transition-colors">Kontakt</a>
           </div>
           <div>
