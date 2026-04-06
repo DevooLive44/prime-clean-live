@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
           <div className="p-12 md:p-20 bg-gradient-to-br from-[#1e3a8a] to-[#0f172a] text-white">
             <h2 className="text-5xl font-black mb-10 tracking-tighter">Kontakt – Berlin</h2>
             <p className="text-blue-100 mb-12 text-lg opacity-80 leading-relaxed font-light">
-              Kontaktanfragen für unseren offiziellen Start am 05.04.2026 in Berlin.
+              Kontaktieren Sie uns für ein unverbindliches Angebot in Berlin.
             </p>
             <div className="space-y-8">
               <a href="tel:+4915204899810" className="flex items-center gap-6 group">
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
               <div className="flex items-start gap-6 pt-8 border-t border-white/10 mt-8">
                  <div className="text-blue-400 text-2xl">⚖️</div>
                  <p className="text-xs text-blue-200/60 italic leading-loose">
-                   Gewerbe gegründet. Operativer Start am 05.04.2026. Wir freuen uns auf Ihre Anfragen für den Raum Berlin.
+                   Kontaktieren Sie uns für ein unverbindliches Angebot in Berlin. Wir freuen uns auf Ihre Anfragen für den Raum Berlin.
                  </p>
               </div>
             </div>
