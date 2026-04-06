@@ -48,7 +48,7 @@ const App: React.FC = () => {
                   Das Gewerbe ist offiziell gegründet. Wir nehmen ab dem 05.04.2026 den vollen Betrieb auf und bereiten derzeit alle Strukturen für einen reibungslosen Ablauf vor.
                 </p>
                 <div className="inline-block px-5 py-2 bg-blue-600 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">
-                  Start am 05.04.2026
+                  
                 </div>
               </div>
             </div>
