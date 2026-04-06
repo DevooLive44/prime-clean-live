@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
             </h1>
             <div className="space-y-4 mb-10">
               <p className="text-xl text-slate-700 font-semibold leading-relaxed max-w-xl">
-                Professionelle Objekt- und Reinigungsdienstleistungen für Berlin – Jetzt verfügbar in Berlin
+                Professionelle Objekt- und Reinigungsdienstleistungen für Berlin – Wir sind ab sofort für Sie im Einsatz und bieten professionelle Gebäudereinigung in Berlin an.
               </p>
               <p className="text-slate-500 leading-relaxed max-w-xl italic text-sm">
-                Offizieller Start am 05.04.2026.
+                Wir sind ab sofort für Sie im Einsatz und bieten professionelle Gebäudereinigung in Berlin an.
               </p>
             </div>
             <div className="flex flex-col sm:row gap-4">
