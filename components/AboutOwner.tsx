@@ -32,7 +32,7 @@ const AboutOwner: React.FC = () => {
             <p className="text-blue-400 font-bold uppercase mb-6">Unternehmensleitung</p>
 
             <p className="text-slate-300 text-lg leading-relaxed">
-              PrimeClean Facility Management wird von einem ehemaligen Polizeibeamten geführt.
+              Die Geschäftsführung von PrimeClean Facility Management liegt in den Händen eines ehemaligen Polizeibeamten – ein Garant für Zuverlässigkeit, Struktur und höchste Sorgfalt.
             </p>
           </div>
 
