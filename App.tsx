@@ -84,7 +84,7 @@ const App: React.FC = () => {
             <div className="bg-blue-900/20 border border-blue-500/20 p-8 rounded-3xl backdrop-blur-sm">
               <p className="text-xs font-black text-blue-300 mb-3 tracking-[0.2em] uppercase">Status: Gegründet </p>
               <p className="text-[11px] text-blue-200/60 leading-relaxed font-medium">
-                PrimeClean Facility Management ist offiziell gegründet. WWir sind in Berlin aktiv und stehen Ihnen mit professionellen Reinigungs- und Facility-Services zur Verfügung.
+                PrimeClean Facility Management ist offiziell gegründet. Wir sind in Berlin aktiv und stehen Ihnen mit professionellen Reinigungs- und Facility-Services zur Verfügung.
               </p>
             </div>
           </div>
