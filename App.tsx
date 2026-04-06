@@ -45,7 +45,7 @@ const App: React.FC = () => {
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <h3 className="text-2xl font-bold mb-6 italic">Operativer Start</h3>
                 <p className="text-blue-100/80 leading-relaxed font-light mb-8">
-                  Das Gewerbe ist offiziell gegründet. Wir nehmen ab dem 05.04.2026 den vollen Betrieb auf und bereiten derzeit alle Strukturen für einen reibungslosen Ablauf vor.
+                  PrimeClean Facility Management steht für zuverlässige und professionelle Gebäudereinigung in Berlin – effizient, gründlich und vertrauensvoll.
                 </p>
                 <div className="inline-block px-5 py-2 bg-blue-600 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">
                   
